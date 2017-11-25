@@ -7,7 +7,8 @@
 Install [polymer-cli](https://github.com/Polymer/polymer-cli):
 
     npm install -g polymer-cli
-
+    i changed it
+    
 
 ##### Setup
     # Using CLI
