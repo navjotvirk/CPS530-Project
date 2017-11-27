@@ -9,30 +9,26 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 -->
 
 <link rel="import" href="../bower_components/polymer/polymer-element.html">
-<link rel="import" href="shared-styles.html">
 
-<dom-module id="my-view1">
+<dom-module id="my-new-view">
+  <!-- Defines the element's style and local DOM -->
   <template>
-    <style include="shared-styles">
+    <style>
       :host {
         display: block;
 
-        padding: 10px;
+        padding: 16px;
       }
     </style>
 
-    <div class="card">
-      <div class="circle">1</div>
-      <h1>About</h1>
-      <p>This is an about page.</p>
-    </div>
+    <h1>Demo Page, Demo goes in here</h1>
   </template>
-
   <script>
-    class MyView1 extends Polymer.Element {
-      static get is() { return 'my-view1'; }
+    // Your new element extends the Polymer.Element base class
+    class MyNewView extends Polymer.Element {
+      static get is() { return 'my-new-view'; }
     }
-
-    window.customElements.define(MyView1.is, MyView1);
+    //Now, register your new custom element so the browser can use it
+    customElements.define(MyNewView.is, MyNewView);
   </script>
 </dom-module>
