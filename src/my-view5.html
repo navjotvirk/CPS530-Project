@@ -1,38 +1,276 @@
 <!--
-@license
-Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
-This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
-The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
-The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
-Code distributed by Google as part of the polymer project is also
-subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+CPS 530 Final - Polymer 2.0
+
+Alisikander Ahmed 500629092
+Filip Bajlon 500634465
+Nam Danh 500622885
+Navjot Virk 500591047
+Ng Ho Yin 500627221
+Robert Nash 500717736
 -->
 
 <link rel="import" href="../bower_components/polymer/polymer-element.html">
 <link rel="import" href="shared-styles.html">
+<link rel="import" href="polymer/polymer.html">
+<link rel="import" href="../bower_components/paper-card/paper-card.html">
+<link rel="import" href="../bower_components/paper-button/paper-button.html">
+<link rel="import" href="../bower_components/paper-checkbox/paper-checkbox.html">
 
 <dom-module id="my-view5">
-  <template>
-    <style include="shared-styles">
-      :host {
-        display: block;
+    <template>
+        <!-- Additional Embedded Stylings  -->
+        <style include="shared-styles">
+            :host {
 
-        padding: 10px;
-      }
-    </style>
+                /*background: white;*/
 
-    <div class="card">
-      <div class="circle">3</div>
-      <h1>Credits Page</h1>
-      <p>Basic Credits page with group members and roles</p>
-    </div>
-  </template>
+                color: black;
 
-  <script>
-    class MyView5 extends Polymer.Element {
-      static get is() { return 'my-view5'; }
-    }
+                display: block;
 
-    window.customElements.define(MyView5.is, MyView5);
-  </script>
+                padding: 10px;
+
+            }
+
+            div {
+
+                text-align: center;
+
+            }
+
+            paper-card {
+
+                /*position: absolute;*/
+
+                display: inline-block;
+
+                background: white;
+
+                box-sizing: border-box;
+
+                margin: 16px;
+
+                padding: 16px;
+
+                border-radius: 2px;
+
+                text-align: center;
+
+            }
+
+            hr {
+
+                box-shadow: rgba(0, 0, 0, 0.24) -2px 5px 12px 0px, rgba(0, 0, 0, 0.12) 0px 0px 12px 0px;
+
+            }
+        </style>
+
+
+        <!-- Credits title / will remmove soon -->
+        <div class="card">
+            <div class="circle">C</div>
+            <div class="circle">R</div>
+            <div class="circle">E</div>
+            <div class="circle">D</div>
+            <div class="circle">I</div>
+            <div class="circle">T</div>
+            <div class="circle">S</div>
+            <!-- <h1>Credits Page</h1> -->
+            <p>Basic Credits page with group members and roles</p>
+            <paper-checkbox>Ready to deploy!</paper-checkbox>
+        </div>
+
+        <iron-icon class="star" icon="star"></iron-icon>
+        <iron-icon icon="maps:directions-bus"></iron-icon>
+        <!-- Credits, Who did what  -->
+
+        <h1> Credits Page </h1>
+
+        <script>
+            (function() {
+                Polymer({
+                    is: 'simple-overlay',
+                    behaviors: [
+                        Polymer.IronOverlayBehavior
+                    ]
+                });
+            })();
+        </script>
+
+        <h1>
+            Page 1,
+            <small>
+                Framework specifics:
+            </small>
+        </h1>
+        <!-- Summary snapshot presentation of the Framework -->
+        <paper-card image="../images/manifest/icon-192x192.png">
+            <div class="card-content">
+                <div class="cafe-header">Navjot Virk
+                    <div class="cafe-location cafe-light">
+                    <!-- <iron-icon icon="communication:location-on"></iron-icon> -->
+                    <!-- <span>250ft</span> -->
+                    </div>
+                </div>
+            </div>
+            <div class="card-actions">
+                <div class="horizontal justified">
+                    <paper-icon-button icon="icons:event"></paper-icon-button>
+                    <!-- <paper-button>Student ID:</paper-button> -->
+                    <!-- <paper-button>500622885</paper-button> -->
+                    <!-- <paper-button></paper-button> -->
+                    <!-- <paper-button class="cafe-reserve">Reserve</paper-button> -->
+                </div>
+            </div>
+        </paper-card>
+
+        <hr />
+        <h1>
+            Page 2,
+            <small>
+                Installations Tutorial:
+            </small>
+        </h1>
+        <!-- Robert Nash -->
+        <paper-card image="../images/manifest/icon-192x192.png">
+            <div class="card-content">
+                <div class="cafe-header">Aliskander Ahmed
+                    <div class="cafe-location cafe-light">
+                    <!-- <iron-icon icon="communication:location-on"></iron-icon> -->
+                    <!-- <span>250ft</span> -->
+                    </div>
+                </div>
+            </div>
+            <div class="card-actions">
+                <div class="horizontal justified">
+                    <paper-icon-button icon="icons:event"></paper-icon-button>
+                    <!-- <paper-button>Student ID:</paper-button> -->
+                    <!-- <paper-button>500717736</paper-button> -->
+                    <!-- <paper-button></paper-button> -->
+                    <!-- <paper-button class="cafe-reserve">Reserve</paper-button> -->
+                </div>
+            </div>
+        </paper-card>
+
+        <hr />
+        <h1>
+            Page 3,
+            <small>
+                Demo Tutorial:
+            </small>
+        </h1>
+        <!-- Ho Yin Ng -->
+        <paper-card image="../images/manifest/icon-192x192.png">
+            <div class="card-content">
+                <div class="cafe-header">Ho Yin Ng
+                    <div class="cafe-location cafe-light">
+                    <!-- <iron-icon icon="communication:location-on"></iron-icon> -->
+                    <!-- <span>250ft</span> -->
+                    </div>
+                </div>
+            </div>
+            <div class="card-actions">
+                <div class="horizontal justified">
+                    <paper-icon-button icon="icons:event"></paper-icon-button>
+                    <!-- <paper-button>Student ID:</paper-button> -->
+                    <!-- <paper-button>500717736</paper-button> -->
+                    <!-- <paper-button></paper-button> -->
+                    <!-- <paper-button class="cafe-reserve">Reserve</paper-button> -->
+                </div>
+            </div>
+        </paper-card>
+
+        <hr />
+        <h1>
+            Page 4,
+            <small>
+                Application Demonstration:
+            </small>
+        </h1>
+        <!-- Filip Bajlon -->
+        <paper-card image="../images/manifest/icon-192x192.png">
+            <div class="card-content">
+                <div class="cafe-header">Filip Bajlon
+                    <div class="cafe-location cafe-light">
+                    <!-- <iron-icon icon="communication:location-on"></iron-icon> -->
+                    <!-- <span>250ft</span> -->
+                    </div>
+                </div>
+            </div>
+            <div class="card-actions">
+                <div class="horizontal justified">
+                    <paper-icon-button icon="icons:event"></paper-icon-button>
+                    <!-- <paper-button>Student ID:</paper-button> -->
+                    <!-- <paper-button>500717736</paper-button> -->
+                    <!-- <paper-button></paper-button> -->
+                    <!-- <paper-button class="cafe-reserve">Reserve</paper-button> -->
+                </div>
+            </div>
+        </paper-card>
+
+        <hr />
+        <h1>
+            Page 5,
+            <small>
+                Conclusion:
+            </small>
+        </h1>
+        <!-- Navjot Virk -->
+        <paper-card image="../images/manifest/icon-192x192.png">
+            <div class="card-content">
+                <div class="cafe-header">Robert Nash
+                    <div class="cafe-location cafe-light">
+                    <!-- <iron-icon icon="communication:location-on"></iron-icon> -->
+                    <!-- <span>250ft</span> -->
+                    </div>
+                </div>
+            </div>
+            <div class="card-actions">
+                <div class="horizontal justified">
+                    <paper-icon-button icon="icons:event"></paper-icon-button>
+                    <!-- <paper-button>Student ID:</paper-button> -->
+                    <!-- <paper-button>500717736</paper-button> -->
+                    <!-- <paper-button></paper-button> -->
+                    <!-- <paper-button class="cafe-reserve">Reserve</paper-button> -->
+                </div>
+            </div>
+        </paper-card>
+
+        <hr />
+        <h1>
+            Page 6,
+            <small>
+                Credits:
+            </small>
+        </h1>
+        <!-- Aliskander Ahmed -->
+        <paper-card image="../images/manifest/icon-192x192.png">
+            <div class="card-content">
+                <div class="cafe-header">Nam Danh
+                    <div class="cafe-location cafe-light">
+                    <!-- <iron-icon icon="communication:location-on"></iron-icon> -->
+                    <!-- <span>250ft</span> -->
+                    </div>
+                </div>
+            </div>
+            <div class="card-actions">
+                <div class="horizontal justified">
+                    <paper-icon-button icon="icons:event"></paper-icon-button>
+                    <!-- <paper-button>Student ID:</paper-button> -->
+                    <!-- <paper-button>500717736</paper-button> -->
+                    <!-- <paper-button></paper-button> -->
+                    <!-- <paper-button class="cafe-reserve">Reserve</paper-button> -->
+                </div>
+            </div>
+        </paper-card>
+    </template>
+
+
+    <script>
+        class MyView5 extends Polymer.Element {
+        static get is() { return 'my-view5'; }
+        }
+
+        window.customElements.define(MyView5.is, MyView5);
+    </script>
 </dom-module>

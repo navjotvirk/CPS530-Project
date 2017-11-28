@@ -1,11 +1,12 @@
 <!--
-@license
-Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
-This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
-The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
-The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
-Code distributed by Google as part of the polymer project is also
-subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+CPS 530 Final - Polymer 2.0
+
+Alisikander Ahmed 500629092
+Filip Bajlon 500634465
+Nam Danh 500622885
+Navjot Virk 500591047
+Ng Ho Yin 500627221
+Robert Nash 500717736
 -->
 
 <link rel="import" href="../bower_components/polymer/polymer-element.html">
@@ -44,7 +45,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       app-header {
         color: #fff;
         background-color: var(--app-primary-color);
-      }
+        text-align: center;
+     }
 
       app-header paper-icon-button {
         --paper-icon-button-ink-color: white;
@@ -83,10 +85,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     <app-drawer-layout fullbleed narrow="{{narrow}}">
       <!-- Drawer content -->
       <app-drawer id="drawer" slot="drawer" swipe-open="[[narrow]]">
-        <app-toolbar>Menu Bar</app-toolbar>
+        <app-toolbar>Menu</app-toolbar>
         <iron-selector selected="[[page]]" attr-for-selected="name" class="drawer-list" role="navigation">
           <a name="view1" href="[[rootPath]]view1">About</a>
-          <a name="view2" href="[[rootPath]]view2">Basic Tutorial</a>
+          <a name="view2" href="[[rootPath]]view2">Installation</a>
           <a name="view3" href="[[rootPath]]view3">Demo Tutorial</a>
           <a name="new-view" href="/new-view">Our Demo</a>
           <a name="view4" href="[[rootPath]]view4">Conclusion</a>
