@@ -10,22 +10,72 @@ Robert Nash 500717736
 -->
 
 <link rel="import" href="../bower_components/polymer/polymer-element.html">
-<link rel="import" href="shared-styles.html">
 
 <dom-module id="my-view1">
   <template>
-    <style include="shared-styles">
-      :host {
-        display: block;
-
-        padding: 10px;
-      }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
 
     <div class="card">
-      <div class="circle">1</div>
-      <h1>About</h1>
-      <p>This is an about page.</p>
+      <section>
+
+      <input class="animate" type="radio" name="question" id="q1"/>
+      <label class="animate" for="q1">What is Polymer Project 2.0? </label>
+      <p class="response animate">Polymer is a JavaScript library that helps users create custom reusable HTML elements.
+         Polymer adds additional functionality over standard Web Component API’s resulting in performance oriented and maintainable apps. <br /><br />
+         <strong>Unlock the Power of Web Components.</strong><br />
+         Polymer Project 2.0 is a lightweight library that focuses on taking full advantage of Web Components.
+      </p>
+      <input class="animate" type="radio" name="question" id="q2"/>
+      <label class="animate" for="q2">How are Web Components utilized? </label>
+      <p class="response animate">Web Components helps developers create reusable custom elements that interoperate seamlessly with the browser’s
+         built-in elements, or break your app up into right-sized components, making your code cleaner and less expensive to maintain.
+      </p>
+      <input class="animate" type="radio" name="question" id="q3"/>
+      <label class="animate" for="q3">How popular is Polymer Project 2.0? </label>
+      <p class="response animate">Polymer.js is one of the most upcoming high-in-demand web technologies being developed by Google developers and
+         contributors on GitHub. Polymer Project recently released version 2.0 building on its popularity and improving interoperability and data
+         system improvements. <br /><br />
+         Polymer 2.0 is based on web platform standards that are natively supported on over 1 billion mobile devices.
+      </p>
+      <input class="animate" type="radio" name="question" id="q4"/>
+      <label class="animate" for="q4">What are the strengths of Polymer Project 2.0?</label>
+      <p class="response animate"><strong>Speed Focused</strong><br />
+         Polymers platform does the heavy lifting resulting in responsive apps.<br /><br />
+         <strong>For today and beyond</strong><br />
+         Polymer makes the most of the web platform by using the latest APIs.<br /><br />
+         <strong>Fully Interoperable</strong><br />
+         Polymer-powered elements are based on standard Web Components APIs, so they work seamlessly with the browser's built-in elements
+         and other Web Components. <br /><br />
+      </p>
+      <input class="animate" type="radio" name="question" id="q5"/>
+      <label class="animate" for="q5">What are the weaknesses of Polymer Project 2.0? </label>
+      <p class="response animate">
+         · It is not entirely clear that how to organize larger applications.<br />
+         · Dependency errors and pointing to a different version of dependencies.<br />
+         · Downloading of entire library and Polyfills.<br />
+         · Lack of server side rendering.<br />
+      </p>
+      <input class="animate" type="radio" name="question" id="q6"/>
+      <label class="animate" for="q6">What are Polyfills? </label>
+      <p class="response animate">For backing Web Components, we always need Polyfills. The webcomponent.js Polyfills enables the Web Components
+         in browsers that lack native support.
+      </p>
+      <input class="animate" type="radio" name="question" id="q7"/>
+      <label class="animate" for="q7">Which developers mostly use it and for what kind of websites? </label>
+      <p class="response animate">Primarily, developers with a focus on speed utilize this framework. Developers that use Polymer 2.0 have the
+         ability to create web applications without worrying about cross browser compatibility problems. <br /><br />
+         Google is using Polymer for a wide variety of their services such as YouTube Web, Google Earth, Google Music, Project Fi,
+         Chrome Components: PDF Viewer, OS Keyboard, Feature Dashboard. <br />
+         Other companies that utilize Polymer include EA, McDonald’s Menu Board Software, Bloomberg.<br /><br />
+      </p>
+      <input class="animate" type="radio" name="question" id="q8"/>
+      <label class="animate" for="q8">Is Polymer Project 2.0 backend, frontend or both? </label>
+      <p class="response animate">Polymer Project 2.0 is a front end library, as it provides access to Web Components APIs. The Polymer strategy
+         is to have front-end developers leverage browser based technologies which are currently in the process of standardization, as they become
+         available. In the meantime, gaps are filled using Polyfills.
+      </p>
+    </section>
+
     </div>
   </template>
 
