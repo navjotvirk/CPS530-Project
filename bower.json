@@ -1,7 +1,12 @@
 {
-  "name": "polymer-starter-kit",
+  "name": "CPS530 Final",
   "authors": [
-    "The Polymer Authors"
+    "Alisikander Ahmed 500629092
+    Filip Bajlon 500634465
+    Nam Danh 500622885
+    Navjot Virk 500591047
+    Ng Ho Yin 500627221
+    Robert Nash 500717736"
   ],
   "license": "https://polymer.github.io/LICENSE.txt",
   "dependencies": {
