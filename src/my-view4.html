@@ -8,7 +8,8 @@ Navjot Virk 500591047
 Ng Ho Yin 500627221
 Robert Nash 500717736
 -->
-
+<script src="../bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+<link rel="import" href="../bower_components/animated-image/animated-image.html">
 <link rel="import" href="../bower_components/polymer/polymer-element.html">
 <link rel="import" href="shared-styles.html">
 
@@ -27,17 +28,9 @@ Robert Nash 500717736
     </style>
 
     <div class="card">
-      <div class="circle">C</div>
-  	  <div class="circle">O</div>
-  	  <div class="circle">N</div>
-  	  <div class="circle">C</div>
-  	  <div class="circle">L</div>
-  	  <div class="circle">U</div>
-  	  <div class="circle">S</div>
-  	  <div class="circle">I</div>
-  	  <div class="circle">O</div>
-  	  <div class="circle">N</div>
-
+		<animated-image source="../images/conc.jpg" scale-start="1.5" scale-end="1.5" animation-fill-mode="forwards" animation-timing-function="ease-in" viewport-width="100%" opacity-start="0.3" opacity-end="1"  translate-x-start="100px" translate-x-end="0%" translate-y-start="-50px" translate-y-end="0px" animation-duration="7s"></animated-image>
+    </div>
+    <div class="card">
       <h1>Experience with Polymer/Firebase</h1>
       <p>Overall, Polymer is a robust and modular Framework that is very capable of handling making a professional and responsive website for a plethora of devices.</p>
   	  <p>Firebase was very to implement, using our already made google accounts we simply took our finalized project and pushed it to Firebase.</p>
