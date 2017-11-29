@@ -13,9 +13,8 @@ Robert Nash 500717736
 <link rel="import" href="../bower_components/iron-pages/iron-pages.html">
 <link rel="import" href="../bower_components/iron-selector/iron-selector.html">
 
-<link rel="import" href="../bower_components/carbon-route/app-location.html">
-<link rel="import" href="../bower_components/carbon-route/app-route.html">
-
+<!-- <link rel="import" href="../bower_components/carbon-route/app-location.html">
+<link rel="import" href="../bower_components/carbon-route/app-route.html">  -->
 <link rel="import" href="blog-pages.html">
 
 <dom-module id="my-new-view">
@@ -35,7 +34,7 @@ Robert Nash 500717736
 			margin: 0 auto;
 			width:80%;
 			height: width%;
-			
+
 	  }
 	  @mixin clearfix {
 		&:after {
@@ -106,7 +105,7 @@ Robert Nash 500717736
 		  <blog-pages route="{{categoryTail}}"
 					  category="{{categoryData.category}}"></blog-pages>
 
-		
+
 		<!-- <div class="l-wrap"> -->
 			<!-- <div class="three-col-grid"> -->
 			<!-- <template is="dom-repeat" items="{{contacts}}"> -->
@@ -117,9 +116,9 @@ Robert Nash 500717736
 			<!-- </template> -->
 			<!-- </div> -->
 		<!-- </div> -->
-		
+
 		</main>
-	
+
   </template>
   <script>
 	<!-- function openWin(image) { -->
@@ -130,12 +129,12 @@ Robert Nash 500717736
 		<!-- myWindow.document.write("This text will appear in the window!") -->
 		<!-- myWindow.document.write("</BODY>") -->
 		<!-- myWindow.document.write("</HTML>") -->
-		
+
 	<!-- } -->
 
 	function closeWin() {
 		myWindow.close();   // Closes the new window
-	} 
+	}
   	Polymer({
 		is : "my-new-view",
 		 observers: [
@@ -151,7 +150,7 @@ Robert Nash 500717736
       _updateScroll: function() {
         window.scroll(0, 0);
       },
-    
+
 		ready: function(){
 			this.contacts =[
 				{
@@ -180,7 +179,7 @@ Robert Nash 500717736
 					email:"err@hello.com",
 					href:"www.google.com"
 				}]
-			
+
 		}
 	});
     <!-- // Your new element extends the Polymer.Element base class -->

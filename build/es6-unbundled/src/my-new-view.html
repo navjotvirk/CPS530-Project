@@ -1,0 +1,69 @@
+<html><head><link rel="import" href="../bower_components/polymer/polymer-element.html"><link rel="import" href="../bower_components/iron-pages/iron-pages.html"><link rel="import" href="../bower_components/iron-selector/iron-selector.html"><link rel="import" href="blog-pages.html"></head><body><dom-module id="my-new-view"><template><style>:host{display:block;padding:16px;}h5{text-align:center;}img{display:block;margin:0 auto;width:80%;height:width%;}@mixin clearfix{&:after{display:table;clear:both;content:'';}}body{margin-top:3rem;}.l-wrap{margin-right:auto;margin-left:auto;}.grid-item{width:30%;padding:10px;float:left;}a{color:black;text-decoration:none;margin-right:8px;font-size:18px;}.iron-selected{text-decoration:underline;}nav{height:65px;margin:0 auto;text-align:right;}main{width:900px;margin:0 auto;font-size:21px;font-family:Georgia;}h2{font-family:sans-serif;}</style><app-location route="{{route}}" use-hash-as-path=""></app-location><app-route route="{{route}}" pattern="/:category" data="{{categoryData}}" tail="{{categoryTail}}"></app-route><nav><iron-selector selected="[[categoryData.category]]" attr-for-selected="data-page"><a data-page="art" href="#/art/list">Home</a></iron-selector></nav><main><blog-pages route="{{categoryTail}}" category="{{categoryData.category}}"></blog-pages></main></template><script>
+	<!-- function openWin(image) { -->
+		<!-- myWindow = window.open("", "myWindow", "width=500,height=400");   // Opens a new window -->
+		<!-- myWindow.document.write("<TITLE>Title Goes Here</TITLE>") -->
+		<!-- myWindow.document.write("<BODY BGCOLOR=pink>") -->
+		<!-- myWindow.document.write("<h1>Hello!</h1>") -->
+		<!-- myWindow.document.write("This text will appear in the window!") -->
+		<!-- myWindow.document.write("</BODY>") -->
+		<!-- myWindow.document.write("</HTML>") -->
+
+	<!-- } -->
+
+	function closeWin() {
+		myWindow.close();   // Closes the new window
+	}
+  	Polymer({
+		is : "my-new-view",
+		 observers: [
+        '_updateScroll(route)'
+      ],
+
+      attached: function() {
+        if (!this.route.path) {
+          this.set('route.path', '/art/list');
+        }
+      },
+
+      _updateScroll: function() {
+        window.scroll(0, 0);
+      },
+
+		ready: function(){
+			this.contacts =[
+				{
+					name:"Scott",
+					img: "http://www.catster.com/wp-content/uploads/2017/08/A-brown-cat-licking-its-lips.jpg",
+					email:"scott@hello.com",
+					href:"http://www.google.com"
+				},{
+					name:"c",
+					img: "http://www.catster.com/wp-content/uploads/2017/08/A-brown-cat-licking-its-lips.jpg",
+					email:"err@hello.com",
+					href:"www.google.com"
+				},{
+					name:"c",
+					img: "http://www.catster.com/wp-content/uploads/2017/08/A-brown-cat-licking-its-lips.jpg",
+					email:"err@hello.com",
+					href:"www.google.com"
+				},{
+					name:"c",
+					img: "http://www.catster.com/wp-content/uploads/2017/08/A-brown-cat-licking-its-lips.jpg",
+					email:"err@hello.com",
+					href:"www.google.com"
+				},{
+					name:"c",
+					img: "http://www.catster.com/wp-content/uploads/2017/08/A-brown-cat-licking-its-lips.jpg",
+					email:"err@hello.com",
+					href:"www.google.com"
+				}]
+
+		}
+	});
+    <!-- // Your new element extends the Polymer.Element base class -->
+    <!-- class MyNewView extends Polymer.Element { -->
+      <!-- static get is() { return 'my-new-view'; } -->
+    <!-- } -->
+    //Now, register your new custom element so the browser can use it
+    customElements.define(MyNewView.is, MyNewView);
+  </script></dom-module></body></html>
