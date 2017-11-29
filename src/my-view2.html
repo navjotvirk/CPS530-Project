@@ -17,13 +17,18 @@ Robert Nash 500717736
     <style include="shared-styles">
     :host {
       display: block;
-
+      background:#ECF0F1;
       padding: 10px;
     }
 
     .card {
       background: #3498db;
       color: white;
+      box-shadow: rgba(0, 0, 0, 0.24) -2px 5px 12px 0px, rgba(0, 0, 0, 0.12) 0px 0px 12px 0px;
+    }
+
+    img{
+      border-radius: 10px;
       box-shadow: rgba(0, 0, 0, 0.24) -2px 5px 12px 0px, rgba(0, 0, 0, 0.12) 0px 0px 12px 0px;
     }
 
@@ -49,7 +54,7 @@ Robert Nash 500717736
       </p>
     </div>
 
-    <center><paper-card image="/images/Install/step1.png">
+    <center><paper-card>
       <img src="../images/Install/step1.png"></img>
     </paper-card></center>
 
@@ -72,6 +77,10 @@ Robert Nash 500717736
       </p>
     </div>
 
+    <center><paper-card>
+      <img src="../images/Install/step2.png"></img>
+    </paper-card></center>
+
     <div class="card">
       <p>
         Initiate a basic application with the following command<br>
@@ -83,9 +92,14 @@ Robert Nash 500717736
       <p>
         Lastly we can serve our page with the command-line interface using<br>
         <code>$polymer serve</code>
-
       </p>
     </div>
+
+
+    <center><paper-card>
+      <img src="../images/Install/step3.png"></img>
+    </paper-card></center>
+
   </template>
 
   <script>
