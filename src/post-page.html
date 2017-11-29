@@ -13,7 +13,7 @@
  See the License for the specific language governing permissions and
  limitations under the License.
 -->
-
+<link rel="import" href="../bower_components/polymer/polymer-element.html">
 <link rel="import" href="../bower_components/iron-ajax/iron-ajax.html">
 <link rel="import" href="../bower_components/iron-image/iron-image.html">
 
@@ -21,7 +21,7 @@
 
   <template>
 
-    <style>
+    <style include="shared-styles">
       :host {
         display: none;
       }
@@ -34,6 +34,9 @@
         line-height: 33.18px;
         white-space: pre-wrap;
       }
+	  .card {
+              box-shadow: rgba(0, 0, 0, 0.24) -2px 5px 12px 0px, rgba(0, 0, 0, 0.12) 0px 0px 12px 0px; 
+            }
     </style>
 
     <iron-ajax
@@ -44,13 +47,16 @@
       last-response="{{postContent}}"></iron-ajax>
 
     <article>
-      <h2>[[postContent.title]]</h2>
-      <p>[[postContent.intro_text]]</p>
-      <iron-image style="width:500px; height:650px;" placeholder="[[postContent.img_placeholder]]"
-                  sizing="auto" preload fade src="[[postContent.img]]"
-                  alt="[[postContent.img_alt]]"></iron-image>
-				 
-      <p>[[postContent.body_text]]</p>
+		<div class="card">
+		  <h2>[[postContent.title]]</h2>    
+		  <p>[[postContent.intro_text]]</p>
+		  <iron-image style="width:500px; height:650px;" placeholder="[[postContent.img_placeholder]]"
+					  sizing="auto" preload fade src="[[postContent.img]]"
+					  alt="[[postContent.img_alt]]"></iron-image>
+		</div>
+	  <div class="card">		 
+		<p>[[postContent.body_text]]</p>
+	  </div>
     </article>
 
   </template>
