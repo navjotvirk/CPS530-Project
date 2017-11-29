@@ -11,6 +11,7 @@ Robert Nash 500717736
 <script src="../bower_components/webcomponentsjs/webcomponents-lite.js"></script>
 <link rel="import" href="../bower_components/animated-image/animated-image.html">
 <link rel="import" href="../bower_components/polymer/polymer-element.html">
+<link rel="import" href="../bower_components/iron-icon/iron-icon.html">
 <link rel="import" href="shared-styles.html">
 
 <dom-module id="my-view4">
@@ -27,11 +28,29 @@ Robert Nash 500717736
       color: white;
       box-shadow: rgba(0, 0, 0, 0.24) -2px 5px 12px 0px, rgba(0, 0, 0, 0.12) 0px 0px 12px 0px;
     }
+
+    iron-icon {
+  --iron-icon-width: 32px;
+  --iron-icon-height: 32px;
+    fill:yellow;
+  }
+
+iron-icon.star:last-of-type { color: var(--paper-grey-500); }
     </style>
 
     <div class="card">
       <animated-image source="../images/conc.jpg" scale-start="1.5" scale-end="1.5" animation-fill-mode="forwards" animation-timing-function="ease-in" viewport-width="100%" opacity-start="0.3" opacity-end="1"  translate-x-start="100px" translate-x-end="0%" translate-y-start="-50px" translate-y-end="0px" animation-duration="7s"></animated-image>
     </div>
+
+    <div class="card">
+      <h2><center>Rating: 3.5/5
+        <iron-icon class="star" icon="my-icons:star"></iron-icon>
+        <iron-icon class="star" icon="my-icons:star"></iron-icon>
+        <iron-icon class="star" icon="my-icons:star"></iron-icon>
+        <iron-icon class="star" icon="my-icons:half-star"></iron-icon></center>
+      </h2>
+    </div>
+
     <div class="card">
       <h2>Experience with Polymer/Firebase</h2>
       <p>Overall, Polymer is a robust and modular Framework that is very capable of handling making a professional and responsive website for a plethora of devices.</p>
