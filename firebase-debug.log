@@ -1,0 +1,24 @@
+[debug] [2017-11-29T08:45:17.146Z] ----------------------------------------------------------------------
+[debug] [2017-11-29T08:45:17.148Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2017-11-29T08:45:17.148Z] CLI Version:   3.15.1
+[debug] [2017-11-29T08:45:17.148Z] Platform:      darwin
+[debug] [2017-11-29T08:45:17.148Z] Node Version:  v8.9.1
+[debug] [2017-11-29T08:45:17.149Z] Time:          Wed Nov 29 2017 03:45:17 GMT-0500 (EST)
+[debug] [2017-11-29T08:45:17.149Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-11-29T08:45:17.164Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-11-29T08:45:17.165Z] > authorizing via signed-in user
+[debug] [2017-11-29T08:45:17.167Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2017-11-29T08:45:17.167Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token { refresh_token: '1/5AYAx-4C4jkfmqWYJKzQWIyTzdOboUetV-7jdcawvzs',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Wed Nov 29 2017 03:45:17 GMT-0500 (EST)
+[debug] [2017-11-29T08:45:17.702Z] <<< HTTP RESPONSE 200
+[debug] [2017-11-29T08:45:17.713Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/cps530-polymer-final  
+ Wed Nov 29 2017 03:45:17 GMT-0500 (EST)
+[debug] [2017-11-29T08:45:18.561Z] <<< HTTP RESPONSE 200
+[debug] [2017-11-29T08:45:18.562Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/cps530-polymer-final/tokens  
+ Wed Nov 29 2017 03:45:18 GMT-0500 (EST)
+[debug] [2017-11-29T08:45:18.965Z] <<< HTTP RESPONSE 200
