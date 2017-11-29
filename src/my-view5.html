@@ -14,265 +14,230 @@ Robert Nash 500717736
 <link rel="import" href="polymer/polymer.html">
 <link rel="import" href="../bower_components/paper-card/paper-card.html">
 <link rel="import" href="../bower_components/paper-button/paper-button.html">
-<!-- <link rel="import" href="../bower_components/emoji-rain/emoji-rain.html"> -->
 
 <dom-module id="my-view5">
-    <template>
-        <!-- Additional Embedded Stylings  -->
-        <style include="shared-styles">
-            :host {
-
-                /*background: white;*/
-
-                color: black;
-
-                display: block;
-
-                padding: 10px;
-
-                text-align: center;
-
-            }
-
-            paper-card {
-
-                /*position: absolute;*/
-
-                display: inline-block;
-
-                background: white;
-
-                box-sizing: border-box;
-
-                margin: 16px;
-
-                padding: 16px;
-
-                border-radius: 2px;
-
-                text-align: center;
-
-                box-shadow: rgba(0, 0, 0, 0.24) -2px 5px 12px 0px, rgba(0, 0, 0, 0.12) 0px 0px 12px 0px;
-
-            }
-
-            h2 {
-
-                text-align: left;
-
-            }
-
-            .card {
-
-            	box-shadow: rgba(0, 0, 0, 0.24) -2px 5px 12px 0px, rgba(0, 0, 0, 0.12) 0px 0px 12px 0px;
-
-            }
-
-            .name {
-
-				box-shadow: rgba(0, 0, 0, 0.24) -2px 5px 12px 0px, rgba(0, 0, 0, 0.12) 0px 0px 12px 0px;
-
-            }
-        </style>
+  <template>
+    <!-- Additional Embedded Stylings  -->
+    <style include="shared-styles">
+    :host {
+      /*background: white;*/
+      color: black;
+      display: block;
+      padding: 10px;
+      text-align: center;
+    }
+    paper-card {
+      /*position: absolute;*/
+      display: inline-block;
+      background: white;
+      box-sizing: border-box;
+      margin: 16px;
+      padding: 16px;
+      border-radius: 2px;
+      text-align: center;
+      box-shadow: rgba(0, 0, 0, 0.24) -2px 5px 12px 0px, rgba(0, 0, 0, 0.12) 0px 0px 12px 0px;
+    }
+    h2 {
+      text-align: left;
+    }
+    .card {
+      box-shadow: rgba(0, 0, 0, 0.24) -2px 5px 12px 0px, rgba(0, 0, 0, 0.12) 0px 0px 12px 0px;
+    }
+    .name {
+      box-shadow: rgba(0, 0, 0, 0.24) -2px 5px 12px 0px, rgba(0, 0, 0, 0.12) 0px 0px 12px 0px;
+    }
+    </style>
 
 
-        <!-- Credits title / will remmove soon -->
-        <div class="card">
-            <div class="circle">C</div>
-            <div class="circle">R</div>
-            <div class="circle">E</div>
-            <div class="circle">D</div>
-            <div class="circle">I</div>
-            <div class="circle">T</div>
-            <div class="circle">S</div>
+    <!-- Credits title / will remmove soon -->
+    <h1>Credits</h1><hr>
+
+    <!-- Emoji rain web component -->
+    <!-- <emoji-rain drops="50" active></emoji-rain> -->
+    <!-- <script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script> -->
+    <!-- <button onclick="rain(this, false)" id="button-rain">Make it rain!</button> -->
+
+    <!-- First 3 pages introduction -->
+
+    <!-- Navjot Virk -->
+    <paper-card image="../images/manifest/icon-192x192.png">
+      <div class="card-content">
+        <div class = "name">
+          Navjot virk
         </div>
+        <br />
+        <div>
+          Framework Specifics
+        </div>
+      </div>
+      <div class="card-actions">
+        <div class="horizontal justified">
+          <paper-button>
+            <b>
+              Presenter
+            </b>
+          </paper-button>
+          <br />
+          <paper-button>
+            <b>
+              Developer
+            </b>
+          </paper-button>
+        </div>
+      </div>
+    </paper-card>
 
-        <!-- Emoji rain web component -->
-        <!-- <emoji-rain drops="50" active></emoji-rain> -->
-        <!-- <script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script> -->
-        <!-- <button onclick="rain(this, false)" id="button-rain">Make it rain!</button> -->
+    <!-- Aliskander Ahmed -->
+    <paper-card image="../images/manifest/icon-192x192.png">
+      <div class="card-content">
+        <div class = "name">
+          Aliskander Ahmed
+        </div>
+        <br />
+        <div>
+          Installations Tutorial
+        </div>
+      </div>
+      <div class="card-actions">
+        <div class="horizontal justified">
+          <paper-button>
+            <b>
+              Presenter
+            </b>
+          </paper-button>
+          <br />
+          <paper-button>
+            <b>
+              Developer
+            </b>
+          </paper-button>
+        </div>
+      </div>
+    </paper-card>
 
-       	<!-- First 3 pages introduction -->
+    <!-- Ho Yin Ng -->
+    <paper-card image="../images/manifest/icon-192x192.png">
+      <div class="card-content">
+        <div class = "name">
+          Ho Yin Ng
+        </div>
+        <br />
+        <div>
+          Demo Tutorial
+        </div>
+      </div>
+      <div class="card-actions">
+        <div class="horizontal justified">
+          <paper-button>
+            <b>
+              Presenter
+            </b>
+          </paper-button>
+          <br />
+          <paper-button>
+            <b>
+              Developer
+            </b>
+          </paper-button>
+        </div>
+      </div>
+    </paper-card>
 
-        <!-- Navjot Virk -->
-        <paper-card image="../images/manifest/icon-192x192.png">
-            <div class="card-content">
-                <div class = "name">
-                	Navjot virk
-                </div>
-                <br />
-                <div>
-                	Framework Specifics
-                </div>
-            </div>
-            <div class="card-actions">
-                <div class="horizontal justified">
-                    <paper-button>
-                        <b>
-                            Presenter
-                        </b>
-                    </paper-button>
-                    <br />
-                    <paper-button>
-                        <b>
-                            Developer
-                        </b>
-                    </paper-button>
-                </div>
-            </div>
-        </paper-card>
+    <hr />
 
-        <!-- Aliskander Ahmed -->
-        <paper-card image="../images/manifest/icon-192x192.png">
-            <div class="card-content">
-                <div class = "name">
-                	Aliskander Ahmed
-                </div>
-                <br />
-                <div>
-                	Installations Tutorial
-                </div>
-            </div>
-            <div class="card-actions">
-                <div class="horizontal justified">
-                    <paper-button>
-                        <b>
-                            Presenter
-                        </b>
-                    </paper-button>
-                    <br />
-                    <paper-button>
-                        <b>
-                            Developer
-                        </b>
-                    </paper-button>
-                </div>
-            </div>
-        </paper-card>
+    <!-- Next 3 pages introduction -->
 
-        <!-- Ho Yin Ng -->
-        <paper-card image="../images/manifest/icon-192x192.png">
-            <div class="card-content">
-                <div class = "name">
-                	Ho Yin Ng
-                </div>
-                <br />
-                <div>
-                	Demo Tutorial
-                </div>
-            </div>
-            <div class="card-actions">
-                <div class="horizontal justified">
-                    <paper-button>
-                        <b>
-                            Presenter
-                        </b>
-                    </paper-button>
-                    <br />
-                    <paper-button>
-                        <b>
-                            Developer 
-                        </b>
-                    </paper-button>
-                </div>
-            </div>
-        </paper-card>
+    <!-- Filip Bajlon -->
+    <paper-card image="../images/manifest/icon-192x192.png">
+      <div class="card-content">
+        <div class = "name">
+          Filip Bajlon
+        </div>
+        <br />
+        <div>
+          App. Demonstration
+        </div>
+      </div>
+      <div class="card-actions">
+        <div class="horizontal justified">
+          <paper-button>
+            <b>
+              Presenter
+            </b>
+          </paper-button>
+          <br />
+          <paper-button>
+            <b>
+              Developer
+            </b>
+          </paper-button>
+        </div>
+      </div>
+    </paper-card>
 
-        <hr />
+    <!-- Robert Nash -->
+    <paper-card image="../images/manifest/icon-192x192.png">
+      <div class="card-content">
+        <div class = "name">
+          Robert Nash
+        </div>
+        <br />
+        <div>
+          Conclusion
+        </div>
+      </div>
+      <div class="card-actions">
+        <div class="horizontal justified">
+          <paper-button>
+            <b>
+              Presenter
+            </b>
+          </paper-button>
+          <br />
+          <paper-button>
+            <b>
+              Developer
+            </b>
+          </paper-button>
+        </div>
+      </div>
+    </paper-card>
 
-        <!-- Next 3 pages introduction -->
+    <!-- Nam Danh -->
+    <paper-card image="../images/manifest/icon-192x192.png">
+      <div class="card-content">
+        <div class = "name">
+          Nam Danh
+        </div>
+        <br />
+        <div>
+          Credits
+        </div>
+      </div>
+      <div class="card-actions">
+        <div class="horizontal justified">
+          <paper-button>
+            <b>
+              Presenter
+            </b>
+          </paper-button>
+          <br />
+          <paper-button>
+            <b>
+              Developer
+            </b>
+          </paper-button>
+        </div>
+      </div>
+    </paper-card>
 
-        <!-- Filip Bajlon -->
-        <paper-card image="../images/manifest/icon-192x192.png">
-            <div class="card-content">
-                <div class = "name">
-                	Filip Bajlon
-                </div>
-                <br />
-                <div>
-                	App. Demonstration
-                </div>
-            </div>
-            <div class="card-actions">
-                <div class="horizontal justified">
-                    <paper-button>
-                        <b>
-                            Presenter
-                        </b>
-                    </paper-button>
-                    <br />
-                    <paper-button>
-                        <b>
-                            Developer
-                        </b>
-                    </paper-button>
-                </div>
-            </div>
-        </paper-card>
+  </template>
 
-        <!-- Robert Nash -->
-        <paper-card image="../images/manifest/icon-192x192.png">
-            <div class="card-content">
-                <div class = "name">
-                	Robert Nash
-                </div>
-                <br />
-                <div>
-                	Conclusion
-                </div>
-            </div>
-            <div class="card-actions">
-                <div class="horizontal justified">
-                    <paper-button>
-                        <b>
-                            Presenter
-                        </b>
-                    </paper-button>
-                    <br />
-                    <paper-button>
-                        <b>
-                            Developer
-                        </b>
-                    </paper-button>
-                </div>
-            </div>
-        </paper-card>
+  <script>
+  class MyView5 extends Polymer.Element {
+    static get is() { return 'my-view5'; }
+  }
 
-        <!-- Nam Danh -->
-        <paper-card image="../images/manifest/icon-192x192.png">
-            <div class="card-content">
-                <div class = "name">
-                	Nam Danh
-                </div>
-                <br />
-                <div>
-                	Credits
-                </div>
-            </div>
-            <div class="card-actions">
-                <div class="horizontal justified">
-                    <paper-button>
-                        <b>
-                            Presenter
-                        </b>
-                    </paper-button>
-                    <br />
-                    <paper-button>
-                        <b>
-                            Developer
-                        </b>
-                    </paper-button>
-                </div>
-            </div>
-        </paper-card>
-
-    </template>
-
-    <script>
-        class MyView5 extends Polymer.Element {
-        static get is() { return 'my-view5'; }
-        }
-
-        window.customElements.define(MyView5.is, MyView5);
-    </script>
+  window.customElements.define(MyView5.is, MyView5);
+  </script>
 </dom-module>
