@@ -15,51 +15,98 @@ Robert Nash 500717736
 <dom-module id="my-view2">
   <template>
     <style include="shared-styles">
-      :host {
-        display: block;
+    :host {
+      display: block;
+      background:#ECF0F1;
+      padding: 10px;
+    }
 
-        padding: 10px;
-      }
+    .card {
+      background: #3498db;
+      color: white;
+      box-shadow: rgba(0, 0, 0, 0.24) -2px 5px 12px 0px, rgba(0, 0, 0, 0.12) 0px 0px 12px 0px;
+    }
 
-      .card {
-        box-shadow: rgba(0, 0, 0, 0.24) -2px 5px 12px 0px, rgba(0, 0, 0, 0.12) 0px 0px 12px 0px; 
-      }
+    img{
+      border-radius: 10px;
+      box-shadow: rgba(0, 0, 0, 0.24) -2px 5px 12px 0px, rgba(0, 0, 0, 0.12) 0px 0px 12px 0px;
+    }
+
+    h1{
+      font-family: 'Montserrat', sans-serif;
+      color: black;
+      font-size: 70px;
+      text-align: center;
+      letter-spacing: -5px;
+      font-weight: lighter;
+    }
+
     </style>
 
+      <h1>INSTALL</h1>
+
     <div class="card">
-      <div class="circle">2</div>
-      <h1>Basic Tutorial</h1>
-      <p>Node.js 	https://nodejs.org/en/ <br>
-         Polymer CLI 	https://www.polymer-project.org/2.0/start/install-2-0#use-cli <br>
-         Bower		https://bower.io
-      </p>
-
       <p>
-        Next in order to download Polymer command-line interface we run the following as root <br><br>
+        We need to install the following: <br>
+        <a>Node.js 	<a href="https://nodejs.org/en/">https://nodejs.org/en/</a> <br>
+        Polymer CLI 	<a href="https://www.polymer-project.org/2.0/start/install-2-0#use-cli">https://www.polymer-project.org/2.0/start/install-2-0#use-cli</a><br>
+        Bower		<a href="https://bower.io">https://bower.io</a>
+      </p>
+    </div>
 
-        $ npm install -g bower<br>
-        $ sudo npm install -g polymer-cli<br>
+    <center><paper-card>
+      <img src="../images/Install/step1.png"></img>
+    </paper-card></center>
 
-        $bower install Polymer/polymer#^2.0.0<br>
+    <div class="card">
+      <p>
+        Next in order to download Polymer command-line interface we run the following as root <br>
 
-        <br>We Now have everything Setup and can start building a basic Hello World Application <br><br>
+        <code>$npm install -g bower</code><br>
+        <code>$sudo npm install -g polymer-cli</code><br>
+        <code>$bower install Polymer/polymer#^2.0.0</code>
+      </p>
+    </div>
+    <div class="card">
+      <p>
+        We Now have everything Setup and can start building a basic Hello World Application <br>
 
-        $mkdir hello-world<br>
-        $cd hello-world<br>
-
-        Initiate a basic application with the following command<br>
-
-        $polymer init<br>
+        <code>$mkdir hello-world</code><br>
+        <code>$cd hello-world</code>
 
       </p>
     </div>
+
+    <center><paper-card>
+      <img src="../images/Install/step2.png"></img>
+    </paper-card></center>
+
+    <div class="card">
+      <p>
+        Initiate a basic application with the following command<br>
+        <code>$polymer init</code>
+      </p>
+    </div>
+
+    <div class="card">
+      <p>
+        Lastly we can serve our page with the command-line interface using<br>
+        <code>$polymer serve</code>
+      </p>
+    </div>
+
+
+    <center><paper-card>
+      <img src="../images/Install/step3.png"></img>
+    </paper-card></center>
+
   </template>
 
   <script>
-    class MyView2 extends Polymer.Element {
-      static get is() { return 'my-view2'; }
-    }
+  class MyView2 extends Polymer.Element {
+    static get is() { return 'my-view2'; }
+  }
 
-    window.customElements.define(MyView2.is, MyView2);
+  window.customElements.define(MyView2.is, MyView2);
   </script>
 </dom-module>
